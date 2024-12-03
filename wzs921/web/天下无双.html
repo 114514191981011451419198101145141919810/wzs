@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>舜神宇宙无双</title>
+    <style>
+  .colorful-text {
+    font-size: 300px;
+    background-image: linear-gradient(60deg, red, blue, green, yellow, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 30%;
+    color: transparent;
+    animation: color-shift 5s infinite alternate;
+  }
+  @keyframes color-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+p{
+    margin:0;
+}
+</style>
+    </head>
+    <body text="red">  
+        <div style="text-align: center;">
+            <p class="colorful-text">  舜战神</p><div style="text-align: center;">
+        </div>
+        <div style="text-align: center;">
+            <p class="colorful-text">依旧执冕</p>
+        </div>
+    <tr>
+        <td>
+            <a href="..\index.html">
+                <button id="mybutton" style="background-color:yellow;cursor: pointer;width:200px;height:500px;font-size:100;color:red;">舜神录</button>
+            </a>
+        </td>
+    </tr>
+    <script>
+        window.onload = function() 
+        {
+            setTimeout(function()
+            {
+                window.scrollTo({top: document.body.scrollHeight,behavior: 'smooth'});
+                setTimeout(function()
+                {
+                var button = document.getElementById('mybutton');
+                button.click();
+                },3000);
+            }, 2000);
+        };
+    </script>
+    </body>
+</html>
